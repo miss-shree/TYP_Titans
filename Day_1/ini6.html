@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TYP TITANS - LOGIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <style>
+        #mybody {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        #navbar {
+            background: #333333;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 72px;
+        }
+
+        #brand-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #typ-brand-box {
+            font-weight: 900;
+        }
+
+        .typ-branding {
+            background: #50A3A2;
+            padding: 4px 10px;
+            margin: 10px;
+        }
+
+        #navigation-links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 400px;
+        }
+
+        #cover-image {
+            background: grey;
+            width: 80%;
+            height: 280px;
+            margin: 40px auto;
+            background-position: center;
+            background-image: url('ban.jpeg');
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #main-content {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #login-box {
+            width: 360px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #welcome-content {
+            flex: 1;
+            margin-right: 16px;
+            padding: 10px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            #navbar {
+                flex-direction: column;
+                height: 120px;
+            }
+
+            #main-content {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body id="mybody">
+    <div id="navbar">
+        <div id="brand-logo">
+            <div id="typ-brand-box" class="typ-branding">TYP.</div>
+            <div>TITANS</div>
+        </div>
+        <div id="navigation-links">
+            <div>Home</div>
+            <div>About</div>
+            <div>Contact</div>
+            <div>|</div>
+            <div class="typ-branding button">Login</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="cover-image" class="card">
+
+        </div>
+
+        <div id="main-content" style="background-color: white;">
+            <div id="welcome-content" class="card">
+                <h1>😃 Welcome to our homepage!</h1>
+                <p>Using this page, you can login to my solution.</p>
+                <p>This is the dashboard for the unique application which leverages Javascript all across the borders.
+                    The application is developed using ReactJS framework at the client side and at the server side, we
+                    have used NodeJS / ExpressJS and MongoDB. The application will be deployed on cloud on the cloud
+                    provider of our choice once the development is finished.</p>
+                <h2>Its Open Source!</h2>
+                <p>We ❤ Open Source. The source code of this project is available on GitHub and can be checked by anyone
+                    and is under MIT license so that anyone can modify and re-distribute non-commercial as well as
+                    commercial version of the application.</p>
+                <h2>Facing Problem?</h2>
+                <p>In case you are facing any problem while logging in or need more information about how to navigate
+                    through the application, you may contact us by going to <a href="#">contact us</a> page.</p>
+            </div>
+
+
+            <div id="login-box" class="card" style="background-color: white;">
+                    <h2>Login</h2>
+                    <p>Use the account below to login</p>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button>Login</button>
+                    <a class="register-now" href="#">register with email address</a>
+                    <br />
+                    <button class="facebook-login">Login with Facebook</button>
+                    <button class="google-login">Login with Google</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
